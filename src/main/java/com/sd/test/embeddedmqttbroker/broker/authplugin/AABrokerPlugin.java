@@ -22,7 +22,7 @@ public class AABrokerPlugin implements BrokerPlugin {
     UPIAAService upiaaService;
 
     @Override
-    public Broker installPlugin(Broker broker) throws Exception {
+    public Broker installPlugin(Broker broker)  {
         return new AABroker(broker, upiaaService);
     }
 }
